@@ -1,0 +1,29 @@
+/* Entire document uses Roboto */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    color: #000000;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #2f77d6;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Headings */
+h2, h3 {
+    color: #2f77d6;
+    border-bottom: 2px solid #2f77d6;
+    padding-bottom: 5px;
+}
+
+/* Sections */
+section {
+    margin-bottom: 20px;
+}
