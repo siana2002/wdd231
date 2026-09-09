@@ -16,117 +16,141 @@ const currentYear = new Date().getFullYear();
 document.getElementById("currentYear").textContent = currentYear;
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-const businesses = [
+const courses = [
     {
-        businessName: "SNA Enterprises",
-        tagLine: "We can do it",
-        email: "info@gmail.com",
-        phone: "111-111-111",
-        url: "mybusiness.com",
-        imageUrl: "images/sna.png"
+        subject: 'CSE',
+        number: 110,
+        title: 'Introduction to Programming',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course will introduce students to programming. It will introduce the building blocks of programming languages (variables, decisions, calculations, loops, array, and input/output) and use them to solve problems.',
+        technology: [
+            'Python'
+        ],
+         status: true
     },
     {
-        businessName: "CDL Enterprises",
-        tagLine: "You name it, we make it",
-        email: "info@gmail.com",
-        phone: "222-222-222",
-        url: "mybusiness.com",
-        imageUrl: "images/cdl.webp"
+        subject: 'WDD',
+        number: 130,
+        title: 'Web Fundamentals',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course introduces students to the World Wide Web and to careers in web site design and development. The course is hands on with students actually participating in simple web designs and programming. It is anticipated that students who complete this course will understand the fields of web design and development and will have a good idea if they want to pursue this degree as a major.',
+        technology: [
+            'HTML',
+            'CSS'
+        ],
+         status: true
     },
     {
-        businessName: "ABC Enterprises",
-        tagLine: "Better Together",
-        email: "info@gmail.com",
-        phone: "333-333-333",
-        url: "mybusiness.com",
-        imageUrl: "images/abc.png"
+        subject: 'CSE',
+        number: 111,
+        title: 'Programming with Functions',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
+        technology: [
+            'Python'
+        ],
+         status: true
     },
     {
-        businessName: "Modeva",
-        tagLine: "Your style, your statement",
-        email: "info@gmail.com",
-        phone: "444-444-444",
-        url: "mybusiness.com",
-        imageUrl: "images/modeva.jpeg"
+        subject: 'CSE',
+        number: 210,
+        title: 'Programming with Classes',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
+        technology: [
+            'C#'
+        ],
+         status: true
     },
     {
-        businessName: "Brew & Bean",
-        tagLine: "Good coffee. Good moments",
-        email: "info@gmail.com",
-        phone: "555-555-555",
-        url: "mybusiness.com",
-        imageUrl: "images/brewandbean.jpeg"
+        subject: 'WDD',
+        number: 131,
+        title: 'Dynamic Web Fundamentals',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course builds on prior experience in Web Fundamentals and programming. Students will learn to create dynamic websites that use JavaScript to respond to events, update content, and create responsive user experiences.',
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        status: true
     },
     {
-        businessName: "LuxeLine",
-        tagLine: "Simple. Stylish. You",
-        email: "info@gmail.com",
-        phone: "666-666-666",
-        url: "mybusiness.com",
-        imageUrl: "images/luxeline.jpeg"
-    },
-    {
-        businessName: "CoreX",
-        tagLine: "Strength starts here",
-        email: "info@gmail.com",
-        phone: "777-777-777",
-        url: "mybusiness.com",
-        imageUrl: "images/coreX.jpg"
-    },
-    {
-        businessName: "Vitality",
-        tagLine: "Feel strong. Live fully",
-        email: "info@gmail.com",
-        phone: "888-888-888",
-        url: "mybusiness.com",
-        imageUrl: "images/vitality.png"
-    },
-    {
-        businessName: "Elevate",
-        tagLine: "Built for better business",
-        email: "info@gmail.com",
-        phone: "999-999-999",
-        url: "mybusiness.com",
-        imageUrl: "images/elevate.png"
-    },
+        subject: 'WDD',
+        number: 231,
+        title: 'Frontend Web Development I',
+        credits: 2,
+        certificate: 'Web and Computer Programming',
+        description: 'This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.',
+        technology: [
+            'HTML',
+            'CSS',
+            'JavaScript'
+        ],
+        status: false
+    }
 ]
 
-const businessCards = document.querySelector("#businessCards");
-function displayBusinesses(businesses){
-    businessCards.innerHTML = ""
+const courseContainer = document.querySelector("#courseCards");
+function displayCourses(coursesList){
+    courseContainer.innerHTML = "";
 
-    businesses.forEach(business => {
-        const card = document.createElement("section");
+    const totalCredits = coursesList.reduce(
+        (total, course) => total + course.credits,
+        0
+    );
 
-        const businessName = document.createElement("h3");
-        businessName.textContent = business.businessName;
+    document.querySelector("#totalCredits").textContent = totalCredits;
 
-        const tagLine = document.createElement("h4");
-        tagLine.textContent = business.tagLine;
+    coursesList.forEach(course => {
+        const card = document.createElement("div");
+        card.classList.add("course-card");
 
-        const email = document.createElement("p")
-        email.textContent = `EMAIL: ${business.email}`;
+        if (course.status){
+            card.classList.add("completed");
+        } else{
+            card.classList.add("not-completed");
+        }
 
-        const phone = document.createElement("p")
-        phone.textContent = `PHONE: ${business.phone}`;
+        const status = document.createElement("p");
 
-        const url = document.createElement("p")
-        url.textContent = `URL: ${business.url}`;
+        if (course.status) {
+            status.textContent = "✓";
+        } else {
+        status.textContent = "○";
+        }
 
-        const image = document.createElement("img");
-        image.src = business.imageUrl;
-        image.alt = business.businessName;
-        image.loading = "lazy";
+        const subject = document.createElement("p");
+        subject.textContent = course.subject;
 
-        card.appendChild(businessName);
-        card.appendChild(tagLine);
-        card.appendChild(email);
-        card.appendChild(phone);
-        card.appendChild(url);
-        card.appendChild(image);
+        const number = document.createElement("p");
+        number.textContent = course.number;
 
-        businessCards.appendChild(card);
+        card.appendChild(status);
+        card.appendChild(subject);
+        card.appendChild(number);
+
+        courseContainer.appendChild(card);
     });
 }
 
-displayBusinesses(businesses);
+displayCourses(courses);
+
+document.querySelector("#all").addEventListener("click", () =>{
+    displayCourses(courses);
+});
+
+document.querySelector("#wdd").addEventListener("click", () =>{
+    const wddCourses = courses.filter(course => course.subject === "WDD");
+    displayCourses(wddCourses);
+});
+
+document.querySelector("#cse").addEventListener("click", () =>{
+    const cseCourses = courses.filter(course => course.subject === "CSE");
+    displayCourses(cseCourses);
+});

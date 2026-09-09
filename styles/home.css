@@ -1,0 +1,184 @@
+/* HOME PAGE STYLING */
+/* HEADING */
+.heading{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: rgb(163, 162, 162);
+    padding: 10px 10px 5px;
+}
+
+#menu-button{
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    font-size: xx-large;
+}
+
+h2{
+    color: #000;
+    text-align: center;
+}
+
+/* NAVIGATION */
+#navigation{
+    display: none;
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #322d2d;
+}
+
+#navigation.show{
+    display: block;
+}
+
+#navigation a:hover{
+    text-decoration: line-through;
+}
+
+#navigation a{
+    display: flex;
+    font-size: larger;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* BODY AND MAIN */
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+section{
+    border: 1px solid #322d2d;
+    background-color: rgb(163, 162, 162);
+}
+
+section h2{
+    margin-top: 0;
+    background-color: #322d2d;
+    color: #fff;
+    padding: 5px;
+}
+
+section p{
+    text-align: center;
+    padding: 10px;
+}
+
+section img{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0 25px;
+}
+
+.special{
+    border: none;
+    background-color: #fff;
+}
+
+.courses{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.courses button{
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 8px 20px;
+    background-color: #322d2d;
+    cursor: pointer;
+    color: #fff;
+}
+
+.courses button:hover{
+    background-color: #000;
+}
+
+#courseCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.course-card{
+    display: grid;
+    grid-template-columns: 3fr 3fr 3fr;
+    gap: 10px;
+    text-align: center;
+}
+
+.course-card{
+    display: flex;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: #322d2d;
+    color: #fff;
+}
+
+.course-card p{
+    font-size: larger;
+}
+
+.course-card.completed{
+    background-color: #322d2d;
+}
+
+.course-card.not-completed{
+    background-color: rgb(163, 162, 162);
+}
+
+/* FOOTER */
+.icons{
+    display: flex;
+    border: none;
+    background-color: transparent;
+}
+
+.foot{
+    text-align: center;
+    background-color: rgb(163, 162, 162);
+    padding: 5px;
+}
+
+.random{
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    #menu-button{
+        display: none;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+
+    #navigation a{
+        display: inline;
+        padding: 0 15px 0 0;
+    }
+
+    .special{
+        grid-column: 1/3;
+    }
+
+    .courses button{
+        font-size: larger;
+        width: 100%;
+        padding: 15px;
+    }
+
+    #courseCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 100%;
+    }
+
+    .icons{
+        padding: 20px;
+    }
+}
