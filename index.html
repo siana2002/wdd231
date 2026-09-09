@@ -7,33 +7,30 @@
     <meta name="description" content="A homepage to host information about student such as photos and courses.">
     <meta name="author" content="Douglas Tangi">
 
-    <!-- NEW META INFORMATION -->
-    <meta property="og:title" content="Home Page">
-    <meta property="og:description" content="A homepage to host information about student such as photos and courses.">
-    <meta property="og:image" content="images/abc.png">
-    <meta property="og:url" content="https://www.apple.com/">
-
     <!-- CSS STYLES HERE -->
     <link rel="stylesheet" href="styles/home.css">
 
     <!-- JAVA SCRIPTS HERE -->
     <script src="scripts/base.js" defer></script>
 
-    <!-- FAVICON HERE -->
-     <link rel="icon" href="favicon.ico">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <header>
         <div class="heading">
             <img src="images/alipay.svg" alt="site logo" width="30" height="30">
-            <span>Site Name</span>
+            <span>Tangi Designs</span>
             <button id="menu-button" aria-label="Open navigation">☰</button>
         </div>
         <nav id="navigation">
             <a href="index.html">Home</a>
             <a href="directory.html">Chamber Project</a>
             <a href="final.html">Final Project</a>
+            <a href="contact.html">Feedback</a>
         </nav>
     </header>
     <h1 id="title">Home</h1>
@@ -44,14 +41,14 @@
         </section>
         <section>
             <h2>Student Photo</h2>
-            <img src="images/me.jpg" alt="student photo" width="220" height="200">
+            <img src="images/douglas-tangi.jpg" alt="Douglas Tangi Photo" width="220" height="200">
         </section>
         <section class="special">
             <h2>Web Certificate Courses</h2>
             <div class="courses">
-                <button id="all" href="#">All Courses</button>
-                <button id="wdd" href="#">WDD Courses</button>
-                <button id="cse" href="#">CSE Courses</button>
+                <button id="all">All Courses</button>
+                <button id="wdd">WDD Courses</button>
+                <button id="cse">CSE Courses</button>
             </div>
         </section>
     </main>
@@ -59,9 +56,9 @@
     <div id="courseCards"></div>
     <footer>
         <section class="icons">
-            <img src="images/facebook.svg" alt="facebook" width="50" height="50">
-            <img src="images/linkedin.svg" alt="linkedin" width="50" height="50">
-            <img src="images/whatsapp.svg" alt="whatsapp" width="50" height="50">
+            <img src="images/facebook.svg" alt="facebook icon" width="50" height="50">
+            <img src="images/linkedin.svg" alt="linkedin icon" width="50" height="50">
+            <img src="images/whatsapp.svg" alt="whatsapp icon" width="50" height="50">
         </section>
         <div class="foot">
             <p>&copy;<span id="currentYear"></span> | Douglas Tangi | Melbourne, Australia</p>
