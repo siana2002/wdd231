@@ -95,7 +95,7 @@ const email = document.createElement("p")
         card.appendChild(image);
 
         businessCards.appendChild(card);
-    });
+    })
 }
 
 displayBusinesses(businesses);

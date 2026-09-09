@@ -1,0 +1,23 @@
+{
+    "family_name": "Tangi",
+    "move_in_date": "02-09-2026",
+    "number_of_records": 4,
+    "visited_by_bishopric": true,
+    "individual_records": [
+        {
+            "name": "Vai",
+            "gender": "Male",
+            "birthdate": "02-09-2026"
+        },
+        {
+            "name": "Mary",
+            "gender": "Female",
+            "birthdate": "02-09-2026"
+        },
+        {
+            "name": "Doug",
+            "gender": "Male",
+            "birthdate": "02-09-2026"
+        }
+    ]
+}

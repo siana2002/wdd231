@@ -1,0 +1,35 @@
+h1{
+    text-align: center;
+    color: rgb(26, 42, 212);
+    font-size: xx-large;
+}
+
+#cards{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#cards h2{
+    color: rgb(26, 42, 212);
+    font-size: x-large;
+}
+
+#cards p{
+    color: rgb(26, 42, 212);
+}
+
+#cards section{
+    background-color: aqua;
+    text-align: center;
+    border: 1px solid #000;
+    padding: 10px;
+}
+
+@media (min-width: 768px) {
+    #cards{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+}
