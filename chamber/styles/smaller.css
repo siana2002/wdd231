@@ -1,0 +1,58 @@
+@media (max-width: 600px) {
+
+    header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 15px 20px;
+    }
+
+    .options{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icon{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #menu-button{
+    display: block;
+    border: none;
+    background-color: transparent;
+    font-size: xx-large;
+    padding: 0;
+    }
+
+    #navigation{
+        display: none;
+    }
+
+    #navigation.show{
+        display: flex;
+        flex-direction: row;
+        gap: 3px;
+        align-items: center;
+    }
+
+    #businessCards{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .menu p{
+        padding-top: 0.1px;
+    }
+
+    .list .course-card{
+        display: flex;
+        flex-direction: column;
+    }
+
+    footer{
+        display: grid;
+    }
+}

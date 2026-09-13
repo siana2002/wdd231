@@ -13,11 +13,18 @@
     <meta property="of:image" content="https://www.apple.com/ac/structured-data/images/open_graph_logo.png?202110180743">
     <meta property="of:url" content="https://www.apple.com/">
 
+    <!-- GOOGLE FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
     <!-- CSS LINKS HERE -->
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/smaller.css">
 
     <!-- JAVASCRIPTS HERE -->
-    <script src="scripts/base.js" defer></script>
+    <script src="scripts/chambers.js" defer></script>
 
     <!-- FAVICON HERE -->
     <link rel="icon" href="favicon.ico">
@@ -36,18 +43,16 @@
             <a href="join.html">Join</a>
             <a href="discover.html">Discover</a>
             </nav>
-            <img src="images/circle-half.svg" alt="Logo" width="30" height="30">
-            <button id="menu-button" aria-label="Open navigation">☰</button>
+            <div class="icon">
+                <img src="images/circle-half.svg" alt="Logo" width="20" height="20">
+                <button id="menu-button" aria-label="Open navigation">☰</button>
+            </div>
         </div>
     </header>
-    <h1 id="title">Directory</h1>
+    <h1 id="title">Business Directory</h1>
     <div>
-        <div class="grid">
-            <P>GRID</P>
-        </div>
-        <div class="list">
-            <P>LIST</P>
-        </div>
+        <button id="grid">GRID 🔴</button>
+        <button id="list">LIST 🔵</button>
     </div>
     <main id="businessCards"></main>
     <footer>

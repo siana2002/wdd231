@@ -72,18 +72,20 @@ div{
     padding-bottom: 30px;
 }
 
-.grid{
+#grid{
     width: 100px;
     border: 1px solid #000;
-    padding: 3px 15px;
+    border-radius: 5px;
+    padding: 10px 15px;
     text-align: center;
     background-color: #FFF8DC;
 }
 
-.list{
+#list{
     width: 100px;
     border: 1px solid #000;
-    padding: 3px 15px;
+    border-radius: 5px;
+    padding: 10px 15px;
     text-align: center;
     background-color: #FFF8DC;
 }
@@ -103,10 +105,13 @@ div{
     color: #000;
 }
 
-section h2, section p, section img{
-    padding-bottom: 5px;
-    color: #000;
-    font-size: small;
+#businessCards .course-card{
+    font-weight: 500;
+    gap: 5px;
+}
+
+.course-card img{
+    width: 60%;
 }
 
 #businessCards section{
@@ -131,6 +136,30 @@ section img{
     padding-top: 10px;
 }
 
+button, a{
+    cursor: pointer;
+}
+
+/* GRID VIEW */
+
+/* LIST VIEW */
+#businessCards.list{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.list .course-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    text-align: left;
+    font-size: large;
+}
+
+.list .course-card img{
+    display: none;
+}
+
 /* FOOTER */
 footer{
     display: flex;
@@ -144,37 +173,9 @@ footer{
     gap: 50px;
 }
 
-/* SMALLER SCREEN */
-@media (max-width: 768px) {
-
-    #menu-button{
-        position: relative;
-        bottom: 17px;
-        right: 30px;
-        display: block;
-        font-size: xxx-large;
-        background-color: transparent;
-        border: none;
-    }
-
-    #navigation{
-        display: none;
-    }
-
-    #navigation.show{
-        display: flex;
-    }
-
+@media (max-width: 900px) {
     #businessCards{
         display: grid;
-        grid-template-columns: 1fr;
-    }
-
-    .menu p{
-        padding-top: 0.1px;
-    }
-
-    footer{
-        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 }
