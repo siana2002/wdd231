@@ -137,8 +137,9 @@ section img{
     padding-top: 10px;
 }
 
-button, a{
+#grid:hover, #list:hover{
     cursor: pointer;
+    background-color: #b5f133;
 }
 
 /* GRID VIEW */
