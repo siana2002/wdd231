@@ -15,7 +15,7 @@ body{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(171, 78, 82);
+    background-color: rgb(150, 55, 60);
     padding: 20px 40px;
 }
 
@@ -165,12 +165,13 @@ button, a{
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(171, 78, 82);
+    background-color: rgb(150, 55, 60);
     padding: 20px 40px;
 }
 
 .icons{
     display: flex;
+    justify-content: center;
     gap: 50px;
 }
 
