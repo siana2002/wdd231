@@ -15,7 +15,7 @@ body{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(150, 55, 60);
+    background-color: #b5f133;
     padding: 20px 40px;
 }
 
@@ -165,7 +165,7 @@ button, a{
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(150, 55, 60);
+    background-color: #b5f133;
     padding: 20px 40px;
 }
 
