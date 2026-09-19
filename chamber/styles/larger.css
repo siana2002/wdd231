@@ -15,7 +15,7 @@ body{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(69, 69, 220);
+    background-color: rgb(237, 232, 232);
     padding: 20px 40px;
 }
 
@@ -163,7 +163,7 @@ section img{
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: rgb(69, 69, 220);
+    background-color: rgb(237, 232, 232);
     padding: 20px 40px;
 }
 
@@ -191,12 +191,12 @@ footer{
 
 .hero-content{
     position: absolute;
-    font-size: xx-large;
+    font-size: x-large;
     text-align: left;
     bottom: 10%;
     left: 5%;
     color: #fff;
-    line-height: 50px;
+    line-height: 40px;
 }
 
 .hero-content a{

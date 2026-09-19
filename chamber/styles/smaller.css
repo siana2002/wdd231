@@ -68,12 +68,12 @@
 
 .hero-content{
     position: absolute;
-    font-size: small;
+    font-size: large;
     text-align: left;
     bottom: 10%;
     left: 5%;
     color: #fff;
-    line-height: 24px;
+    line-height: 28px;
 }
 
 .hero-content a{
@@ -151,4 +151,15 @@
     justify-content: space-evenly;
     padding: 10px;
 }
+}
+
+@media (max-width: 600px) {
+    .hero-content{
+        font-size: small;
+        line-height: 22px;
+    }
+
+    .hero-content h1{
+        font-size: large;
+    }
 }
