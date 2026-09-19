@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chambers of Commerce | Landing Page | Melbourne | Douglas Tangi</title>
+    <meta name="description" content="A website consisting of a chambers of commerce site which contains resources such as business name, contacts and business URL.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- SOCIAL MEDIA METAS HERE -->
+    <meta property="og:title" content="Membership Landing | Chambers of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover local businesses and organizations in our chamber membership directory and connect with trusted members in your community.">
+    <meta property="og:image" content="https://siana2002.github.io/wdd231/chamber/images/alipay.svg">
+    <meta property="og:url" content="https://github.com/siana2002/wdd231/blob/main/chamber/directory.html">
+
+    <!-- GOOGLE FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS LINKS HERE -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+
+    <!-- JAVASCRIPTS HERE -->
+    <script src="scripts/chambers.js" defer></script>
+    <script type="module" src="scripts/spotlights.js"></script>
+    <script type="module" src="scripts/weather.js"></script>
+
+    <!-- FAVICON HERE -->
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="images/alipay.svg" alt="Site Logo" width="50" height="50">
+            <span>Melbourne Chamber of Commerce</span>
+        </div>
+        <div class="options">
+            <nav id="navigation">
+            <a href="home.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+            </nav>
+            <div class="icon">
+                <button id="menu-button" aria-label="Open navigation">☰</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <img src="images/melbourne-hero-images.jpg" alt="Melbourne City">
+            <div class="hero-content">
+                <h2>Stronger Business.</h2>
+                <h2>A Brighter Melbourne.</h2>
+                <p>Connecting local businesses, supporting growth</p>
+                <p>and building a thriving community.</p>
+                <a href="join.html">Join the Chamber --></a>
+            </div>
+        </section>
+        <section class="events">
+            <h2>🎃 Current Events</h2>
+            <div class="events-content">
+                <div class="event-container">
+                    <img src="images/melbourne-show.jpg" alt="A celebration with fireworks">
+                    <h3>Melbourne Royal Show</h3>
+                    <p>📍Melbourne Convention Center</p>
+                    <p>🕐 24 Sep - 4 Oct</p>
+                    <a href="https://royalshow.com.au/?">Learn More --></a>
+                </div>
+                <div class="event-container">
+                    <img src="images/afl-grandfinal.jpg" alt="A trophy with text">
+                    <h3>Toyota AFL Grand Final</h3>
+                    <p>📍Melbourne Cricket Ground</p>
+                    <p>🕐 26 Sep 2026</p>
+                    <a href="https://www.afl.com.au/news/1613073/2026-toyota-afl-grand-final-parade-route-confirmed?">Learn More --></a>
+                </div>
+                <div class="event-container">
+                    <img src="images/dragon.jpeg" alt="A celebration with a light dragon">
+                    <h3>Dragon Moon Festival</h3>
+                    <p>📍Chinatown Plaza</p>
+                    <p>🕐 26 Sep 2026</p>
+                    <a href="https://whatson.melbourne.vic.gov.au/things-to-do/chinatown-lion-and-dragon-moon-festival?">Learn More --></a>
+                </div>
+            </div>
+            
+        </section>
+        <section class="events" id="weather">
+            <h2>🌥️ Melbourne Weather</h2>
+            <div class="current-weather">
+                <h3>Current Weather</h3>
+                <p>
+                    Temperature: <span id="current-temp"></span>
+                </p>
+                <p>
+                    Conditions: <span id="weather-desc"></span>
+                </p>
+                <img id="weather-icon" src="images/weather-icon.webp" alt="weather icon" width="80" height="50">
+            </div>
+            <div class="forecast">
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-container"></div>
+            </div>
+        </section>
+        <section class="events" id="spotlights">
+            <h2>📊Company Spotlights</h2>
+            <div id="spotlightCards"></div>
+        </section>
+    </main>
+    <footer>
+        <section class="info">
+            <h2>Melbourne Chamber of Commerce</h2>
+            <p>3 Honeyblossom St</p>
+            <p>Manor Lakes, Melbourne, VIC</p>
+            <p>arthur.tangi02@gmail.com</p>
+            <p>1112223330</p>
+        </section>
+        <section class="icons">
+            <img src="images/facebook.svg" alt="facebook logo" width="30" height="30">
+            <img src="images/linkedin.svg" alt="linkedin logo" width="30" height="30">
+            <img src="images/whatsapp.svg" alt="whatsapp logo" width="30" height="30">
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Douglas Tangi</p>
+            <p>&copy;<span id="currentYear"></span> Melbourne Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+</body>
+</html>

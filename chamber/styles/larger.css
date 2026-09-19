@@ -15,7 +15,7 @@ body{
 header{
     display: flex;
     justify-content: space-around;
-    background-color: #b5f133;
+    background-color: rgb(69, 69, 220);
     padding: 20px 40px;
 }
 
@@ -136,7 +136,7 @@ section img{
 
 #grid:hover, #list:hover{
     cursor: pointer;
-    background-color: #b5f133;
+    background-color: rgb(69, 69, 220);
 }
 
 /* GRID VIEW */
@@ -163,7 +163,7 @@ section img{
 footer{
     display: flex;
     justify-content: space-around;
-    background-color: #b5f133;
+    background-color: rgb(69, 69, 220);
     padding: 20px 40px;
 }
 
@@ -173,9 +173,122 @@ footer{
     gap: 50px;
 }
 
-@media (max-width: 900px) {
-    #businessCards{
+@media (min-width: 768px) {
+    #businessCards {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+
+    .hero{
+        position: relative;
+    }
+
+    .hero img{
+    width: 100%;
+    height: 500px;
+    display: block;
+}
+
+.hero-content{
+    position: absolute;
+    font-size: xx-large;
+    text-align: left;
+    bottom: 10%;
+    left: 5%;
+    color: #fff;
+    line-height: 50px;
+}
+
+.hero-content a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(69, 69, 220);
+    border-radius: 5px;
+    background-color: rgb(69, 69, 220);
+    padding: 4px 10px;
+}
+
+.events{
+    width: 100%;
+}
+
+.events h2{
+    font-size: xx-large;
+    padding: 15px;
+    text-align: left;
+}
+
+.events-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+.event-container{
+    border: 1px solid rgb(237, 232, 232);
+    padding: 10px;
+    background-color: rgb(237, 232, 232);
+    text-align: left;
+}
+
+.event-container a{
+    text-decoration: none;
+}
+
+.event-container img{
+    width: 100%;
+    display: block;
+}
+
+#spotlightCards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 15px;
+}
+
+.spotlight-content{
+    border: 1px solid rgb(237, 232, 232);
+    padding: 10px;
+    background-color: rgb(237, 232, 232);
+    text-align: left;
+}
+
+.spotlight-content img{
+    width: 100%;
+}
+
+#weather{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    font-size: larger;
+}
+
+#weather h2{
+    margin-bottom: 20px;
+}
+
+.current-weather, .forecast{
+    padding: 40px;
+    
+}
+
+.current-weather{
+    grid-column: 1;
+    border-right: 3px solid rgb(237, 232, 232);
+    line-height: 40px;
+}
+
+.forecast{
+    grid-column: 2;
+}
+
+#forecast-container{
+    display: flex;
+    flex-direction: column;
+    line-height: 70px;
+    font-size: larger;
+}
 }

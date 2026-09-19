@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 
     header{
         display: flex;
@@ -55,4 +55,100 @@
     footer{
         display: grid;
     }
+
+    .hero{
+    position: relative;
+}
+
+.hero img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-content{
+    position: absolute;
+    font-size: small;
+    text-align: left;
+    bottom: 10%;
+    left: 5%;
+    color: #fff;
+    line-height: 24px;
+}
+
+.hero-content a{
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid rgb(69, 69, 220);
+    border-radius: 5px;
+    background-color: rgb(69, 69, 220);
+    padding: 4px 10px;
+}
+
+.events{
+    width: 100%;
+}
+
+.events h2{
+    font-size: xx-large;
+    padding: 15px;
+    text-align: center;
+}
+
+.events-content{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    gap: 10px;
+}
+
+.event-container{
+    border: 1px solid rgb(237, 232, 232);
+    padding: 10px;
+    background-color: rgb(237, 232, 232);
+    text-align: left;
+}
+
+.event-container a{
+    text-decoration: none;
+}
+
+.event-container img{
+    width: 100%;
+    display: block;
+}
+
+#spotlightCards{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+    gap: 10px;
+}
+
+.spotlight-content{
+    border: 1px solid rgb(237, 232, 232);
+    padding: 10px;
+    background-color: rgb(237, 232, 232);
+    text-align: left;
+}
+
+.spotlight-content img{
+    width: 100%;
+}
+
+.forecast{
+    border: 1px solid black;
+    padding: 10px;
+    background-color: rgb(69, 69, 220);
+}
+
+#forecast-container{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+}
 }
