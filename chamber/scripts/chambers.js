@@ -64,8 +64,8 @@ function displayBusinesses(data) {
         const image = document.createElement("img");
         image.src = business.imageUrl;
         image.alt = business.businessName;
-        image.width = 300;
-        image.height = 200;
+        image.width = 213;
+        image.height = 213;
         image.loading = "lazy";
 
         card.appendChild(image);

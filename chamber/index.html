@@ -39,21 +39,19 @@
             <img src="images/alipay.svg" alt="Site Logo" width="50" height="50">
             <span>Melbourne Chamber of Commerce</span>
         </div>
-        <div class="options">
-            <nav id="navigation">
-            <a href="index.html">Home</a>
-            <a href="directory.html">Directory</a>
-            <a href="join.html">Join</a>
-            <a href="discover.html">Discover</a>
-            </nav>
-            <div class="icon">
-                <button id="menu-button" aria-label="Open navigation">☰</button>
-            </div>
+        <div class="icon">
+            <button id="menu-button" aria-label="Open navigation">☰</button>
         </div>
     </header>
     <main>
+        <nav id="navigation" class="nav">
+            <a href="index.html" class="active">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
         <section class="hero">
-            <img src="images/melbourne-hero-images.jpg" alt="Melbourne City">
+            <img src="images/melbourne-hero-images.jpg" alt="Melbourne City" width="1200" height="600" fetchpriority="high">
             <div class="hero-content">
                 <h1>The City Of Melbourne.</h1>
                 <h2>Stronger Business.</h2>
@@ -100,7 +98,7 @@
                 <p>
                     Conditions: <span id="weather-desc"></span>
                 </p>
-                <img id="weather-icon" src="images/weather-icon.webp" alt="weather icon" width="80" height="50">
+                <img id="weather-icon" src="images/weather-icon.webp" alt="weather icon" width="80" height="80">
             </div>
             <div class="forecast">
                 <h3>3-Day Forecast</h3>
