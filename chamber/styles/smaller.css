@@ -161,6 +161,11 @@
     text-align: center;
 }
 
+.join{
+    padding: 30px;
+    font-size: xx-large;
+}
+
 .table{
     display: flex;
     flex-direction: column;
