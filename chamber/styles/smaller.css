@@ -1,4 +1,4 @@
-@media (max-width: 768px) {
+@media (max-width: 961px) {
 
     header{
         display: flex;
@@ -27,11 +27,10 @@
 
     #navigation.show{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         justify-content: space-evenly;
         font-size: larger;
         background-color: rgb(237, 232, 232);
-        
     }
 
     #businessCards{
@@ -155,6 +154,157 @@
 #weather-icon{
     width: 80px;
     height: auto;
+}
+
+/* JOIN PAGE STYLING */
+.join-header{
+    text-align: center;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+}
+
+input, select{
+    padding: 5px;
+    background-color: #fff;
+}
+
+main{
+    background-color: #D8CECE;
+}
+
+.membership-card{
+    border: 1px solid rgb(237, 232, 232);
+    border-radius: 6px;
+    border-bottom: 2px solid #000;
+    padding: 15px;
+    background-color: rgb(237, 232, 232);
+    line-height: 35px;
+}
+
+.membership-card a{
+    text-decoration: none;
+    font-size: large;
+}
+.membership-levels{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+#submit{
+    cursor: pointer;
+    background-color: #B8AAAA;
+    padding: 10px;
+    font-weight: bold;
+}
+
+#submit:hover{
+    background-color: #898080;
+}
+
+/* DIALOG STYLING */
+dialog {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    font-size: large;
+    line-height: 40px;
+}
+
+dialog h2{
+    font-size: xx-large;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button{
+    float: right;
+    font-size: 20px;
+    padding: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #D8CECE;
+}
+
+/* ANIMATION */
+.membership-card{
+    animation: appear 1s ease-in-out;
+}
+
+.card1{
+    animation-delay: 0s;
+}
+
+.card2{
+    animation-delay: 0.2s;
+}
+
+.card3{
+    animation-delay: 0.4s;
+}
+
+.card4{
+    animation-delay: 0.6s;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* THANK YOU PAGE STYLING */
+
+.thankyou {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #EDE7E7;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+.thankyou h1 {
+    margin-bottom: 15px;
+}
+
+.thankyou h2 {
+    margin: 25px 0 15px;
+}
+
+#form-information {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+#form-information p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
 }
 }
 

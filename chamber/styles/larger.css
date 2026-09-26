@@ -14,7 +14,8 @@ body{
 
 header{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     background-color: rgb(237, 232, 232);
     padding: 20px 40px;
 }
@@ -22,30 +23,41 @@ header{
 .menu{
     display: flex;
     padding: 5px;
-    gap: 10px;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bolder;
+    gap: 15px;
 }
 
 .active{
-    background-color: rgb(128, 222, 250);
+    background-color: #B8AAAA;
+    border: 1px solid #B8AAAA;
+    border-radius: 7px;
+    padding: 3px 30px;
 }
 
 nav{
+    width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
     gap: 15px;
     padding: 5px 20px;
-    background-color: rgb(237, 232, 232);
+    margin: 0;
 }
 
 nav a{
     text-decoration: none;
     color: #000;
     font-size: x-large;
+    font-weight: bolder;
 }
 
 nav a:hover{
-    background-color: rgb(128, 222, 250);
-    padding: 5px;
+    background-color: #B8AAAA;
+    border: 1px solid #B8AAAA;
+    border-radius: 7px;
+    padding: 3px 30px;
 }
 
 #menu-button{
@@ -177,7 +189,7 @@ footer{
     gap: 50px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 960px) {
     #businessCards {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -295,5 +307,179 @@ footer{
     flex-direction: column;
     line-height: 70px;
     font-size: larger;
+}
+
+/* JOIN PAGE STYLING */
+.join-header{
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    font-size: xxx-large;
+    background-color: #B8AAAA;
+}
+
+.join{
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    line-height: 45px;
+    background-color: rgb(237, 232, 232);
+    padding: 20px;
+}
+
+input, select{
+    padding: 5px;
+    background-color: #fff;
+}
+
+main{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.membership-card{
+    border: 1px solid rgb(237, 232, 232);
+    border-radius: 6px;
+    border-bottom: 2px solid #000;
+    padding: 20px;
+    background-color: #B8AAAA;
+    text-align: left;
+    line-height: 25px;
+}
+
+.membership-card a{
+    text-decoration: none;
+    font-size: large;
+}
+.membership-levels{
+    background-color: rgb(237, 232, 232);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 20px;
+}
+
+#submit{
+    cursor: pointer;
+    background-color: #B8AAAA;
+    padding: 10px;
+}
+
+#submit:hover{
+    background-color: #898080;
+}
+
+.larger{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+    gap: 100px;
+    margin-bottom: 30px;
+}
+
+/* DIALOG STYLING */
+dialog {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    padding: 30px;
+    border: 3px solid #000;
+    border-radius: 10px;
+    font-size: large;
+    line-height: 40px;
+}
+
+dialog h2{
+    font-size: xx-large;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #000;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+button{
+    float: right;
+    font-size: 20px;
+    padding: 5px;
+}
+
+button{
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #D8CECE;
+}
+
+/* ANIMATION */
+.membership-card{
+    animation: appear 1s ease-in-out;
+}
+
+.card1{
+    animation-delay: 0s;
+}
+
+.card2{
+    animation-delay: 0.2s;
+}
+
+.card3{
+    animation-delay: 0.4s;
+}
+
+.card4{
+    animation-delay: 0.6s;
+}
+
+@keyframes appear{
+    from{
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* THANK YOU PAGE STYLING */
+
+.thankyou {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #EDE7E7;
+    text-align: center;
+    border: 1px solid #999;
+}
+
+.thankyou h1 {
+    margin-bottom: 15px;
+}
+
+.thankyou h2 {
+    margin: 25px 0 15px;
+}
+
+#form-information {
+    background-color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+#form-information p {
+    padding: 10px;
+    margin: 0;
+    border-bottom: 1px solid #ddd;
 }
 }

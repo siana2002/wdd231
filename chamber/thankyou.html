@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chambers of Commerce | Landing Page | Melbourne | Douglas Tangi</title>
+    <meta name="description" content="A website consisting of a chambers of commerce site which contains resources such as business name, contacts and business URL.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- SOCIAL MEDIA METAS HERE -->
+    <meta property="og:title" content="Membership Landing | Chambers of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Discover local businesses and organizations in our chamber membership directory and connect with trusted members in your community.">
+    <meta property="og:image" content="https://siana2002.github.io/wdd231/chamber/images/alipay.svg">
+    <meta property="og:url" content="https://github.com/siana2002/wdd231/blob/main/chamber/directory.html">
+
+    <!-- GOOGLE FONTS HERE -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS LINKS HERE -->
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/smaller.css">
+
+    <!-- JAVASCRIPTS HERE -->
+    <script src="scripts/chambers.js" defer></script>
+    <script type="module" src="scripts/spotlights.js"></script>
+    <script type="module" src="scripts/weather.js"></script>
+    <script type="module" src="scripts/thankyou.js"></script>
+
+    <!-- FAVICON HERE -->
+    <link rel="icon" href="favicon.ico">
+
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <img src="images/alipay.svg" alt="Site Logo" width="50" height="50">
+            <span>Melbourne Chamber of Commerce</span>
+        </div>
+        <div class="icon">
+            <button id="menu-button" aria-label="Open navigation">☰</button>
+        </div>
+    </header>
+    <main>
+        <nav id="navigation" class="nav">
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html" class="active">Join</a>
+            <a href="discover.html">Discover</a>
+        </nav>
+        
+        <section class="thankyou">
+            <h1>Thank You!</h1>
+
+            <p>Thank you for submitting your membership application.</p>
+
+            <h2>Application Information</h2>
+
+            <div id="form-information"></div>
+        </section>
+    </main>
+    <footer>
+        <section class="info">
+            <h2>Melbourne Chamber of Commerce</h2>
+            <p>3 Honeyblossom St</p>
+            <p>Manor Lakes, Melbourne, VIC</p>
+            <p>arthur.tangi02@gmail.com</p>
+            <p>1112223330</p>
+        </section>
+        <section class="icons">
+            <img src="images/facebook.svg" alt="facebook logo" width="30" height="30">
+            <img src="images/linkedin.svg" alt="linkedin logo" width="30" height="30">
+            <img src="images/whatsapp.svg" alt="whatsapp logo" width="30" height="30">
+        </section>
+        <section>
+            <p>WDD231 Class Project</p>
+            <p>Douglas Tangi</p>
+            <p>&copy;<span id="currentYear"></span> Melbourne Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </section>
+    </footer>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        const firstName = params.get("first-name");
+        const lastName = params.get("last-name");
+        const email = params.get("email");
+        const phone = params.get("phone");
+        const businessName = params.get("business-name");
+        const timestamp = params.get("timestamp");
+
+        document.querySelector("#form-information").innerHTML = `
+            <p><strong>First Name:</strong> ${firstName}</p>
+            <p><strong>Last Name:</strong> ${lastName}</p>
+            <p><strong>Email:</strong> ${email}</p>
+            <p><strong>Mobile Number:</strong> ${phone}</p>
+            <p><strong>Business Name:</strong> ${businessName}</p>
+            <p><strong>Date Submitted:</strong> ${timestamp}</p>
+        `;
+    </script>
+</body>
+</html>
