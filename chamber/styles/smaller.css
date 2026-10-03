@@ -335,6 +335,7 @@ button:hover{
     border: 1px solid #000;
     background-color: #EDE7E7;
     padding: 0;
+    font-size: larger;
 
     display: grid;
     grid-template-areas: 
@@ -373,6 +374,10 @@ button:hover{
 
 #discoverCards button {
     grid-area: button;
+}
+
+#discoverCards a{
+    text-decoration: none;
 }
 
 #visit-message{

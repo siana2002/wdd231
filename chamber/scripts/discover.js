@@ -6,11 +6,15 @@ attractions.forEach((attractions) => {
     card.innerHTML = `
     <h2>${attractions.siteName}</h2>
     <figure>
-        <img src="${attractions.imageUrl}" alt="${attractions.name}" width="300" height="200">
+        <img src="${attractions.imageUrl}"
+        alt="${attractions.name}"
+        width="300"
+        height="200"
+        loading="lazy">
     </figure>
     <address>${attractions.address}</address>
     <p>${attractions.description}</p>
-    <button>Learn More</button>
+    <button><a href="${attractions.url}" target="_blank" rel="noopener">Learn More</a></button>
     `;
 
     discoverCard.appendChild(card);
