@@ -323,3 +323,60 @@ button:hover{
         font-size: large;
     }
 }
+
+/* DISCOVER PAGE STYLING */
+#discoverCards{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#discoverCards article{
+    border: 1px solid #000;
+    background-color: #EDE7E7;
+    padding: 0;
+
+    display: grid;
+    grid-template-areas: 
+    "image"
+    "name"
+    "address"
+    "description"
+    "button";
+}
+
+#discoverCards figure{
+    grid-area: image;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#discoverCards img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+}
+
+#discoverCards h2{
+    grid-area: name;
+}
+
+#discoverCards address {
+    grid-area: address;
+}
+
+#discoverCards p {
+    grid-area: description;
+}
+
+#discoverCards button {
+    grid-area: button;
+}
+
+#visit-message{
+    padding: 10px;
+    text-align: center;
+    font-size: larger;
+}

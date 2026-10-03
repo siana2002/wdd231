@@ -1,0 +1,11 @@
+@media (min-width: 750px) {
+    #discoverCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 5px;
+    }
+
+    #discoverCards article{
+        padding: 5px;
+    }
+}

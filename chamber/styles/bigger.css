@@ -1,0 +1,46 @@
+@media (min-width: 1000px) {
+    /* DISCOVER PAGE STYLING */
+    #discoverCards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+    }
+    #discoverCards article{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        grid-template-areas: 
+        "image name"
+        "image address"
+        "image description"
+        "image button";
+        padding: 10px;
+        gap: 10px;
+    }
+
+    #discoverCards article figure {
+        grid-area: image;
+        width: 200px;
+    }
+
+    #discoverCards article h2 {
+        grid-area: name;
+    }
+
+    #discoverCards article address {
+        grid-area: address;
+    }
+
+    #discoverCards article p {
+        grid-area: description;
+    }
+
+    #discoverCards article button {
+        grid-area: button;
+        width: 100%
+    }
+
+    #discoverCards img:hover{
+        transform: scale(1.05);
+        transition: transform 0.3s ease;
+    }
+}
