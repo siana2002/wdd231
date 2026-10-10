@@ -1,0 +1,50 @@
+[
+    {
+        "name": "GEORGE TUPOU I",
+        "description": "George Tupou I united Tonga and became its first king. He established a modern government and introduced Tonga's first written constitution in 1875.",
+        "life": "1845-1893",
+        "region": "HA'APAI",
+        "imageUrl": "images/king1.jpeg",
+        "modalId": "ruler1"
+    },
+    {
+        "name": "GEORGE TUPOU II",
+        "description": "George Tupou II became king at a young age and ruled during a period when Tonga was a British protected state. His reign continued the monarchy established by his grandfather.",
+        "life": "1893-1918",
+        "region": "VAVA'U",
+        "imageUrl": "images/king2.jpg",
+        "modalId": "ruler2"
+    },
+    {
+        "name": "QUEEN SALOTE TUPOU III",
+        "description": "Queen Sālote was Tonga's first and only queen regnant. She was well respected for strengthening Tongan culture, traditions, education, and national identity.",
+        "life": "1918-1965",
+        "region": "TONGATAPU",
+        "imageUrl": "images/queen3.jpeg",
+        "modalId": "ruler3"
+    },
+    {
+        "name": "GEORGE TUPOU IV",
+        "description": "Tupou IV ruled Tonga for more than 40 years. He was known for his strong leadership and played an important role in Tonga's development and international relations.",
+        "life": "1965-2006",
+        "region": "TONGATAPU",
+        "imageUrl": "images/king4.jpeg",
+        "modalId": "ruler4"
+    },
+    {
+        "name": "GEORGE TUPOU V",
+        "description": "George Tupou V introduced important political changes during his short reign. He supported greater democratic representation and changes to Tonga's system of government.",
+        "life": "2006-2012",
+        "region": "TONGATAPU",
+        "imageUrl": "images/king5.jpg",
+        "modalId": "ruler5"
+    },
+    {
+        "name": "GEORGE TUPOU VI",
+        "description": "Tupou VI is the current king of Tonga. He continues to represent Tonga's traditions and culture while supporting the country's development and international relationships.",
+        "life": "2012-Present",
+        "region": "TONGATAPU",
+        "imageUrl": "images/king6.jpeg",
+        "modalId": "ruler6"
+    }
+]

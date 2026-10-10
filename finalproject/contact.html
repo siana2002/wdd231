@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us Page | Douglas Tangi | WDD231</title>
+    <meta name="description" content="A website to display a contact form where users may ask for more information or any enquiries.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- META TAGS HERE -->
+    <meta name="description" content="Contact the Tongan culture website to ask questions, share feedback, or learn more about Tonga's traditions and history.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Contact Us | Tongan Culture">
+    <meta property="og:description" content="Get in touch to share feedback or ask questions about Tongan culture and traditions.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://siana2002.github.io/wdd231/YOUR-FOLDER/contact.html">
+    <meta property="og:image" content="https://siana2002.github.io/wdd231/YOUR-FOLDER/images/YOUR-IMAGE.webp">
+
+    <!-- CSS STYLES HERE -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JAVA SCRIPTS HERE -->
+    <script src="scripts/final.js" defer></script>
+
+    <!-- FAVICON HERE -->
+    <link rel="icon" href="favicon-2.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="images/logo.jpg" alt="site logo" width="50" height="50">
+            <span>TONGAN CULTURES & TRADITIONS</span>
+            <button id="menu-button" aria-label="Open navigation">☰</button>
+        </div>
+        <nav id="navigation">
+            <a href="index.html">HOME</a>
+            <a href="traditions.html">OUR TRADITIONS</a>
+            <a href="kings.html">OUR KINGS & RULERS </a>
+            <a href="contact.html" class="active">CONTACT US</a>
+        </nav>
+    </header>
+    <main>
+        <h1>CONTACT US</h1>
+        <div class="form">
+            <form method="GET" action="thankyou.html" class="table">
+                <label for="first-name">First Name❗️</label>
+                <input type="text" id="first-name" name="first-name" title="Enter your first name" autocomplete="given-name" required>
+
+                <label for="last-name">Last Name❗️</label>
+                <input type="text" id="last-name" name="last-name" title="Enter your last name" autocomplete="family-name" required>
+
+                <label for="email">Email Address❗️</label>
+                <input type="email" id="email" name="email" title="Enter your email address" autocomplete="email" placeholder="john89@gmail.com" required>
+
+                <label for="tel">Phone Number❗️</label>
+                <input type="tel" id="tel" name="tel" title="Enter your phone number" autocomplete="tel" required> 
+
+                <label for="description">Enter Enquiries</label>
+                <textarea id="description" name="description" title="Enter a description of your business"></textarea>
+
+                <input type="hidden" name="timestamp" id="timestamp">
+
+                <input type="submit" value="JOIN THE CLUB" id="submit">
+            </form>
+            <figure class="ngatu">
+                <img src="images/ngatu.webp" alt="tongan ngatu">
+            </figure>
+        </div>
+        <dialog id="np-modal">
+            <h3>NP Membership benefits</h3>
+            <ul>
+                <li>No membership fee</li>
+                <li>Access to community events</li>
+                <li>Business networking opportunities</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="bronze-modal">
+            <h3>Bronze Membership benefits</h3>
+            <ul>
+                <li>Basic business advertising</li>
+                <li>Access to training events</li>
+                <li>Networking opportunities</li>
+                <li>Event discounts</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="silver-modal">
+            <h3>Silver Membership Benefits</h3>
+            <ul>
+                <li>All Bronze benefits</li>
+                <li>Increased business advertising</li>
+                <li>Special event invitations</li>
+                <li>Additional event discounts</li>
+                <li>Training opportunities</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="gold-modal">
+            <h3>Gold Membership Benefits</h3>
+            <ul>
+                <li>All Silver benefits</li>
+                <li>Home page spotlight advertising</li>
+                <li>Premium event discounts</li>
+                <li>Special networking events</li>
+                <li>Priority business promotion</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+    </main>
+    <footer class="foot">
+        <div class="contact">
+            <p>DOUGLAS TANGI</p>
+            <P>3 HONEYBLOSSOM ST, MANOR LAKES</P>
+            <P>111-222-333</P>
+        </div>
+        <div class="sources">
+            <p>UNESCO – Lakalaka: Traditional Dance and Sung Speeches of Tonga</p>
+            <p>Tonga Tourism Authority – Tongan Culture and Traditions</p>
+            <p>Tonga National Centre – Tongan Heritage and Culture</p>
+        </div>
+        <div>
+            <p>&copy;<span id="currentYear"></span> | Douglas Tangi | Melbourne, Australia</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

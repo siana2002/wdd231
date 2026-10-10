@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Culture Page | Douglas Tangi | WDD231</title>
+    <meta name="description" content="A website to display information about the different tongan kings and rulers using pictures and descriptions.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- META TAGS HERE -->
+    <meta name="description" content="Discover the history of Tonga's kings and rulers, their reigns, achievements, and contributions to the Kingdom of Tonga.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Kings and Rulers of Tonga">
+    <meta property="og:description" content="Learn about Tonga's monarchs, their leadership, and their role in shaping the nation's history.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://siana2002.github.io/wdd231/YOUR-FOLDER/kings.html">
+    <meta property="og:image" content="https://siana2002.github.io/wdd231/YOUR-FOLDER/images/YOUR-IMAGE.webp">
+
+    <!-- CSS STYLES HERE -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JAVA SCRIPTS HERE -->
+    <script src="scripts/final.js" defer></script>
+    <script type="module" src="scripts/kings.js"></script>
+
+    <!-- FAVICON HERE -->
+    <link rel="icon" href="favicon-2.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="images/logo.jpg" alt="site logo" width="50" height="50">
+            <span>TONGAN CULTURES & TRADITIONS</span>
+            <button id="menu-button" aria-label="Open navigation">☰</button>
+        </div>
+        <nav id="navigation">
+            <a href="index.html">HOME</a>
+            <a href="traditions.html">OUR TRADITIONS</a>
+            <a href="kings.html" class="active">OUR KINGS & RULERS </a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <main>
+        <h1>TONGAN CULTURES</h1>
+        <div>
+            <section id="kings"></section>
+        </div>
+        <dialog id="ruler1">
+            <h2>BIOGRAPHY</h2>
+            <ul>
+                <li><strong>BIRTH: </strong>4 December, 1797</li>
+                <li><strong>DEATH: </strong>18 February, 1893 </li>
+                <li><strong>REIGN: </strong>1845-1893</li>
+                <li><strong>LEGACY: </strong>United Tonga under his rule and established the constitutional monarch through the 1875 Constitution.</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="ruler2">
+            <h2>BIOGRAPHY</h2>
+            <ul>
+                <li><strong>BIRTH: </strong>18 June, 1874</li>
+                <li><strong>DEATH: </strong>5 April, 1918</li>
+                <li><strong>REIGN: </strong>1893-1918</li>
+                <li><strong>LEGACY: </strong>Ruled Tonga during the period when it was a British protected state.</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="ruler3">
+            <h2>BIOGRAPHY</h2>
+            <ul>
+                <li><strong>BIRTH: </strong>13 March, 1900</li>
+                <li><strong>DEATH: </strong>16 December, 1965</li>
+                <li><strong>REIGN: </strong>1918-1965</li>
+                <li><strong>LEGACY: </strong>Supported Tongan culture and traditions and became known internationally for her appearance at Queen Elizabeth II's coronation in 1953</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="ruler4">
+            <h2>BIOGRAPHY</h2>
+            <ul>
+                <li><strong>BIRTH: </strong>4 July, 1918</li>
+                <li><strong>DEATH: </strong>10 September, 2006</li>
+                <li><strong>REIGN: </strong>1965-2006</li>
+                <li><strong>LEGACY: </strong>Led Tonga through decades of social, economic, and political change.</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="ruler5">
+            <h2>BIOGRAPHY</h2>
+            <ul>
+                <li><strong>BIRTH: </strong>4 May, 1948</li>
+                <li><strong>DEATH: </strong>18 March, 2012</li>
+                <li><strong>REIGN: </strong>2006-2012</li>
+                <li><strong>LEGACY: </strong>Supported democratic reforms that reduced the monarch's direct political powers.</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+        <dialog id="ruler6">
+            <h2>BIOGRAPHY</h2>
+            <ul>
+                <li><strong>BIRTH: </strong>12 July, 1959</li>
+                <li><strong>DEATH: </strong>Still Living</li>
+                <li><strong>REIGN: </strong>2012-Present</li>
+                <li><strong>LEGACY: </strong>Continues to serve as Tongas king and head of state.</li>
+            </ul>
+            <button class="close-modal">CLOSE</button>
+        </dialog>
+    </main>
+    <footer class="foot">
+        <div class="contact">
+            <p>DOUGLAS TANGI</p>
+            <P>3 HONEYBLOSSOM ST, MANOR LAKES</P>
+            <P>111-222-333</P>
+        </div>
+        <div class="sources">
+            <p>UNESCO – Lakalaka: Traditional Dance and Sung Speeches of Tonga</p>
+            <p>Tonga Tourism Authority – Tongan Culture and Traditions</p>
+            <p>Tonga National Centre – Tongan Heritage and Culture</p>
+        </div>
+        <div>
+            <p>&copy;<span id="currentYear"></span> | Douglas Tangi | Melbourne, Australia</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

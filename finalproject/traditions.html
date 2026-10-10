@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Douglas Tangi | WDD231</title>
+    <meta name="description" content="A homepage to host information about tongan culture and traditions.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- META TAGS HERE -->
+    <meta name="description" content="Learn about Tongan traditions, including the lakalaka, kava ceremony, tatau, ngatu, feasting, tauʻolunga, and fakaʻapaʻapa.">
+    <meta name="author" content="Douglas Tangi">
+
+    <!-- Open Graph metadata -->
+    <meta property="og:title" content="Tongan Traditions and Culture">
+    <meta property="og:description" content="Explore the traditional dances, ceremonies, arts, and cultural values that are important to Tongan people.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://siana2002.github.io/wdd231/YOUR-FOLDER/traditions.html">
+    <meta property="og:image" content="https://siana2002.github.io/wdd231/YOUR-FOLDER/images/YOUR-IMAGE.webp">
+
+    <!-- CSS STYLES HERE -->
+    <link rel="stylesheet" href="styles/home.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <!-- JAVA SCRIPTS HERE -->
+    <script src="scripts/final.js" defer></script>
+    <script type="module" src="scripts/traditions.js"></script>
+
+    <!-- FAVICON HERE -->
+    <link rel="icon" href="favicon-2.ico">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <div class="heading">
+            <img src="images/logo.jpg" alt="site logo" width="50" height="50">
+            <span>TONGAN CULTURES & TRADITIONS</span>
+            <button id="menu-button" aria-label="Open navigation">☰</button>
+        </div>
+        <nav id="navigation">
+            <a href="index.html">HOME</a>
+            <a href="traditions.html" class="active">OUR TRADITIONS</a>
+            <a href="kings.html">OUR KINGS & RULERS</a>
+            <a href="contact.html">CONTACT US</a>
+        </nav>
+    </header>
+    <main>
+        <h1>TONGAN TRADITIONS</h1>
+        <div>
+            <div id="traditionCards"></div>
+        </div>
+    </main>
+    <footer class="foot">
+        <div class="contact">
+            <p>DOUGLAS TANGI</p>
+            <P>3 HONEYBLOSSOM ST, MANOR LAKES</P>
+            <P>111-222-333</P>
+        </div>
+        <div class="sources">
+            <p>UNESCO – Lakalaka: Traditional Dance and Sung Speeches of Tonga</p>
+            <p>eHRAF World Cultures – Kava Ceremony</p>
+            <p>Australian National University – Tongan Culture and History</p>
+            <p>BYU Pacific Studies – Tongan culture</p>
+        </div>
+        <div>
+            <p>&copy;<span id="currentYear"></span> | Douglas Tangi | Melbourne, Australia</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+</html>

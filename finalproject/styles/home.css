@@ -1,0 +1,291 @@
+/* HEADER & NAVIGATION */
+body{
+    width: 100%;
+    background-color: rgb(248, 247, 247);
+}
+
+header{
+    padding: 5px 20px;
+}
+
+.heading{
+    display: flex;
+    align-items: center;
+    color: #2f77d6;
+    font-size: larger;
+    font-weight: 600;
+}
+
+#menu-button{
+    margin-left: auto;
+    border: none;
+    background-color: transparent;
+    font-size: xx-large;
+    color: #2f77d6;
+}
+
+#menu-button:hover{
+    cursor: pointer;
+}
+
+#navigation{
+    display: none;
+}
+
+#navigation.show{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: x-large;
+}
+
+#navigation a{
+    text-decoration: none;
+    background-color: #2f77d6;
+    padding: 3px;
+    color: #fff;
+}
+
+#navigation a:hover, .close-modal:hover{
+    font-size: larger;
+    cursor: pointer;
+}
+
+#navigation .active{
+    background-color: rgb(191, 190, 190);
+}
+
+/* MAIN CONTENT */
+#visit-message{
+    padding: 10px;
+    font-size: larger;
+    font-weight: 550;
+}
+
+main{
+    background-color: rgb(248, 247, 247);
+    color: #2f77d6;
+}
+
+h1{
+    padding-left: 10px;
+    border-bottom: 2px solid #2f77d6;
+}
+
+.hero{
+    display: grid;
+}
+
+.hero img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    grid-area: 1/1;
+}
+
+.hero-content{
+    grid-area: 1/1;
+    align-self: center;
+    justify-self: start;
+    padding-left: 30px;
+    padding-top: 100px;
+    color: #fff;
+}
+
+.hero-content h1{
+    border: none;
+}
+
+.hero-content a{
+    color: #fff;
+    text-decoration: none;
+    font-size: larger;
+    padding-left: 15px;
+}
+
+h2{
+    border-bottom: 2.5px solid #2f77d6;
+    color: #2f77d6;
+}
+
+.intro{
+    padding: 10px;
+    font-size: large;
+}
+
+.intro img{
+    display: none;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+}
+
+.traditions{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+.description{
+   text-align: start;
+   width: 50%;
+   line-height: 16px;
+   font-size: medium;
+}
+
+.description a{
+    text-decoration: none;
+    color: #2f77d6;
+}
+
+/* FOOTER */
+.foot{
+    color: #2f77d6;
+    text-align: center;
+    border-top: 2px solid #2f77d6;
+}
+
+/* TRADITIONS & KINGS PAGES STYLING */
+#traditionCards article{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-size: x-large;
+    padding: 15px;
+}
+
+#traditionCards h3, #kings h3{
+    border-bottom: 2px solid #2f77d6;
+}
+
+#traditionCards figure{
+    margin: 0;
+}
+
+#traditionCards img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+#traditionCards button, #kings button{
+    border: none;
+    background-color: transparent;
+    font-size: x-large;
+    text-align: end;
+}
+
+#traditionCards a, #kings a{
+    text-decoration: none;
+    color: #2f77d6;
+    border: 2px solid #2f77d6;
+    padding: 3px 15px;
+}
+
+#traditionCards a:hover, #kings a:hover{
+    font-size: larger;
+    background-color: #cecaca;
+}
+
+/* KINGS & RULERS PAGE STYLING */
+#kings{
+    padding: 10px;
+    font-size: large;
+}
+
+#kings article{
+    padding: 10px;
+    gap: 15px;
+
+    display: grid;
+    grid-template-areas: 
+    "image name"
+    "image description"
+    "image life"
+    "image button";
+}
+
+#kings figure{
+    grid-area: image;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+#kings h3{
+    grid-area: name;
+}
+
+#kings p{
+    margin: 0;
+}
+
+#kings button{
+    grid-area: button;
+}
+
+#kings img{
+    width: 100px;
+    height: 200px;
+    object-fit: contain;
+}
+
+dialog{
+    font-size: larger;
+    color: #2f77d6;
+    line-height: 35px;
+}
+
+dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+.close-modal{
+    display: block;
+    margin-left: auto;
+    padding: 2px 15px;
+    color: #2f77d6;
+    font-size: large;
+    font-weight: 600;
+}
+
+/* CONTACT US PAGE STYLING */
+.form{
+    padding: 40px;
+}
+
+form{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+    color: #000;
+    background-color: rgb(244, 242, 242);
+}
+
+input, #membership{
+    padding: 7px;
+}
+
+#description{
+    padding: 10px;
+}
+
+#submit{
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: #2f77d6;
+    font-weight: 700;
+}
+
+.ngatu img{
+    display: none;
+}
