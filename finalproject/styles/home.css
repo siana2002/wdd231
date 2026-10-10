@@ -13,7 +13,7 @@ header{
     align-items: center;
     color: #2f77d6;
     font-size: larger;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 #menu-button{
@@ -279,11 +279,13 @@ input, #membership{
 
 #submit{
     cursor: pointer;
+    color: #fff;
+    background-color: #2f77d6;
 }
 
 #submit:hover{
-    background-color: #2f77d6;
     font-weight: 700;
+    font-size: large;
 }
 
 .ngatu img{
