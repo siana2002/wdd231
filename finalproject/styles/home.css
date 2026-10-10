@@ -84,12 +84,21 @@ h1{
 }
 
 .hero-content{
+    display: flex;
+    flex-direction: column;
     grid-area: 1/1;
     align-self: center;
+    line-height: 30px;
     justify-self: start;
     padding-left: 30px;
     padding-top: 100px;
     color: #fff;
+    font-size: larger;
+}
+
+.hero-content span{
+    padding-left: 11px;
+    padding-bottom: 12px;
 }
 
 .hero-content h1{
