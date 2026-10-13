@@ -34,5 +34,23 @@ export const traditions = [
         "description": "Tongan feasting is an important part of celebrations, ceremonies, weddings, birthdays, and other significant occasions. Large amounts of food are prepared and shared with family, friends, and guests as a way of showing generosity and hospitality. Traditional foods may include ʻumu dishes, roasted meats, seafood, root crops, and other foods prepared for the occasion. Feasting is about more than eating because it creates an opportunity for people to come together, strengthen relationships, and celebrate their culture.",
         "imageUrl": "images/umu.webp",
         "url": "https://www.tongatourism.travel/discover/people-and-culture/food-and-feastingtauolunga"
+    },
+    {
+        "name": "NGATU (TAPA CLOTH)",
+        "description": "Ngatu is a traditional Tongan cloth made from the inner bark of the mulberry tree. It is decorated with patterns and designs using traditional techniques and is important in Tongan ceremonies, weddings, funerals, and other cultural celebrations. Ngatu is often presented as a gift to show respect, love, and generosity. The making and sharing of ngatu helps preserve traditional knowledge and connects Tongan people to their history and identity.",
+        "imageUrl": "images/ngatu.webp",
+        "url": "https://ich.unesco.org/"
+    },
+    {
+        "name": "TATAU (TRADITIONAL TATTOOING)",
+        "description": "Tatau is a traditional form of tattooing found in Tongan and other Polynesian cultures. Traditional Tongan tattooing can represent identity, commitment, courage, and a person's connection to family and community. The practice has a long cultural history and is associated with important values, responsibilities, and rites of passage. Tatau remains a meaningful expression of cultural identity and pride for many Tongans today.",
+        "imageUrl": "images/tatau.webp",
+        "url": "https://www.britannica.com/art/Polynesian-art"
+    },
+    {
+        "name": "TAʻOVALA (TRADITIONAL WAIST MAT)",
+        "description": "Taʻovala is a traditional Tongan mat worn around the waist as a sign of respect, humility, and cultural identity. It is commonly worn during formal occasions such as weddings, funerals, church services, and important community ceremonies. The type of ta'ovala worn and the way it is tied can vary depending on the occasion and the person's role. Taʻovala is an important part of Tongan dress and represents the values of fakaʻapaʻapa (respect), tradition, and connection to family and community.",
+        "imageUrl": "images/taovala.webp",
+        "url": "https://www.tongatourism.travel/"
     }
 ]
